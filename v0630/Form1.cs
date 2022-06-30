@@ -29,13 +29,13 @@ namespace v0630
             label1.Left += vx;
             label1.Top += vy;
             if (label1.Left < 0)
-                vx = 5;
+                vx = Math.Abs(vx);
             if (label1.Top < 0)
-                vy = 10;
+                vy = Math.Abs(vy);
             if (label1.Right > ClientSize.Width)
-                vx = -5;
+                vx = -Math.Abs(vx);
             if (label1.Bottom > ClientSize.Height)
-                vy = -10;
+                vy = -Math.Abs(vy);
             Point spos = MousePosition;
             Point fpos = PointToClient(spos);
             label2.Left = fpos.X - label2.Width / 2;
