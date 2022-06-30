@@ -12,11 +12,17 @@ namespace v0630
 {
     public partial class Form1 : Form
     {
-        int vx = -5;
-        int vy = -10;
+        int vx = rand.Next(-10,11);
+        int vy = rand.Next(-10,11);
+        //清的=最初に決めておく <> 動的=実行時に変更可能
+        static Random rand = new Random();
+
         public Form1()
         {
             InitializeComponent();
+
+            label1.Left = rand.Next(0,ClientSize.Width);
+            label1.Top = rand.Next(0,ClientSize.Height);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -28,6 +34,7 @@ namespace v0630
         {
             label1.Left += vx;
             label1.Top += vy;
+
             if (label1.Left < 0)
                 vx = Math.Abs(vx);
             if (label1.Top < 0)
@@ -36,10 +43,12 @@ namespace v0630
                 vx = -Math.Abs(vx);
             if (label1.Bottom > ClientSize.Height)
                 vy = -Math.Abs(vy);
+
             Point spos = MousePosition;
             Point fpos = PointToClient(spos);
             label2.Left = fpos.X - label2.Width / 2;
             label2.Top = fpos.Y - label2.Height / 2;
+
             if ((label1.Left <= fpos.X) && (label1.Top <= fpos.Y) && (label1.Right >= fpos.X) && (label1.Bottom >= fpos.Y))
                 timer1.Enabled = false;
         }
