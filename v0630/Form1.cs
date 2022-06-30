@@ -40,6 +40,8 @@ namespace v0630
             Point fpos = PointToClient(spos);
             label2.Left = fpos.X - label2.Width / 2;
             label2.Top = fpos.Y - label2.Height / 2;
+            if ((label1.Left <= fpos.X) && (label1.Top <= fpos.Y) && (label1.Right >= fpos.X) && (label1.Bottom >= fpos.Y))
+                timer1.Enabled = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
