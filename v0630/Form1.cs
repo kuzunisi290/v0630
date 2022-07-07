@@ -12,7 +12,7 @@ namespace v0630
 {
     public partial class Form1 : Form
     {
-        static int charmax => 1000;
+        static int charmax => 100;
         int[] vx = new int[charmax];
         int[] vy = new int[charmax];
         Label[] labels = new Label[charmax];
