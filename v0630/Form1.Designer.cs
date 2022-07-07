@@ -44,7 +44,8 @@ namespace v0630
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(379, 221);
+            this.label1.Location = new System.Drawing.Point(315, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 54);
             this.label1.TabIndex = 0;
@@ -54,9 +55,10 @@ namespace v0630
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(570, 252);
+            this.label2.Location = new System.Drawing.Point(977, 504);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.Size = new System.Drawing.Size(67, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "(・ω・)";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -69,9 +71,10 @@ namespace v0630
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(315, 340);
+            this.checkBox1.Location = new System.Drawing.Point(540, 680);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(100, 19);
+            this.checkBox1.Size = new System.Drawing.Size(166, 34);
             this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "sion is kawaii?";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -80,7 +83,8 @@ namespace v0630
             // pictureBox1
             // 
             this.pictureBox1.Image = global::v0630.Properties.Resources.sionn;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 103);
+            this.pictureBox1.Location = new System.Drawing.Point(69, 36);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(210, 240);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -92,7 +96,8 @@ namespace v0630
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(379, 144);
+            this.label3.Location = new System.Drawing.Point(362, 170);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 54);
             this.label3.TabIndex = 4;
@@ -102,15 +107,17 @@ namespace v0630
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(379, 76);
+            this.label4.Location = new System.Drawing.Point(420, 80);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 54);
             this.label4.TabIndex = 5;
             this.label4.Text = "★c";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 422);
             this.Controls.Add(this.label4);
@@ -119,6 +126,7 @@ namespace v0630
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
